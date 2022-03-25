@@ -47,7 +47,11 @@ Order in which data pipeline runs
 is_event_file_available >> saving_events >> creating_events_table >> events_processing >> archive_processed_files
 
 ### Triggering pipeline
-1) Since it is scheduled to run daily at midnight, we need to manually trigger it from UI.
+1) Since it is scheduled to run daily at midnight, we need to manually trigger it from UI.<br>
+      If pipeline runs successfully output can be verified through Hue with below steps.
+      1) In browser type localhost:32762
+      2) In Hive query window type *select * from AGGREGATED_EVENTS*
+      3) Table partioned can also be verified from hdfs location */user/hive_events* 
 2) To test each step individually follow below steps <br>
    trigger below docker command to access airflow container <br>
    *docker exec -it docker_id /bin/bash* <br>
