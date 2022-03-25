@@ -1,0 +1,7 @@
+id	name	value	timestamp
+1	notification	TRUE	1546333200
+3	refresh	denied	1546334200
+2	background	notDetermined	1546333611
+3	refresh	4	1546333443
+1	notification	FALSE	1546335647
+1	background	TRUE	1546333546
