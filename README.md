@@ -12,7 +12,7 @@
 2) Run start.sh file or run commands manually from true_etl folder to create and start docker container (Note : 8GB should be allocated to docker and it take 15-20 mins to start container for the first time)
 3) Check container status using *docker ps* . All container should be in healthy state.
 
-### Port Details for docker container 
+### Port Details for accessing docker container ui
 1) Airflow :: localhost:8080 :: ui user=airflow :: ui password=airflow
 2) Hue :: localhost:32762 :: user=root :: pass=root
 3) Spark :: localhost:32766
