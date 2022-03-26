@@ -39,7 +39,7 @@ Data pipeline consists of 5 steps : <br>
 1) is_event_file_available : Check if files is present in particular folder to process ie *true_etl\mnt\airflow\dags\files*
 2) saving_events : If files are present move to those files to HDFS location */events*
 3) creating_events_table : Create HIVE table if it does not exists .
-4) events_processing : processing data present in HDFS location */events* using spark job.
+4) events_processing : processing data present in HDFS location */events* using spark job. Store output in hive table.
 5) archive_processed_files : archive processed files from */events* to *archived_events* . Also delete processed files from *true_etl\mnt\airflow\dags\files*
 
 Order in which data pipeline runs
